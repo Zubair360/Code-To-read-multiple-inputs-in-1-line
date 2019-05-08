@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class input_in_one_Line
+{
+    public static void main( String[] args )
+    {
+        Scanner sc = new Scanner( System.in );
+        System.out.print("Enter the Numbers: ");
+
+        String a = sc.nextLine();
+
+        String[] numString = a.split(" ");
+
+
+        int[] num = new int[ numString.length ];
+
+      
+        for ( int i = 0; i < numString.length; i++ )
+        {
+            
+            num[i] = Integer.parseInt( numString[i] );
+           //If Needed, THEN Print: 
+            System.out.print( numbers[i] + ", " );
+        }
+        System.out.println();
+    }
+}
